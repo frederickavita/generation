@@ -5,6 +5,25 @@
 # -------------------------------------------------------------------------
 
 # ---- example index page ----
+if 0:
+    from gluon import * 
+    from db import *  #repeat for all models
+    from menu import *
+    request = current.request
+    response = current.response
+    session = current.session
+    cache = current.cache
+    T = current.T
+
+
+
+def home():
+    response.title = ""
+    description = ""
+    return dict(description=description)
+
+
+
 def index():
     response.flash = T("Hello World")
     return dict(message=T('Welcome to web2py!'))
