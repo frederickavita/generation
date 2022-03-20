@@ -18,8 +18,8 @@ if 0:
 
 
 def home():
-    response.title = ""
-    description = ""
+    response.title = "Generate hundreds of content ideas in seconds"
+    description = "Lack of inspiration and not wanting to spend hours looking for ideas, our tool will generate hundreds of ideas in seconds"
     return dict(description=description)
 
 
